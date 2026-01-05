@@ -1,1 +1,6 @@
-TO DO : Update Changes Later
+- Intro
+- Background
+- Tools Used
+- Analysis
+- Learned
+- Conclusions
