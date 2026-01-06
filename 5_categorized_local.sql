@@ -74,4 +74,4 @@ WHERE
 ORDER BY
     skill_stats.avg_salary DESC,
     skill_stats.demand_count DESC
-LIMIT 25;
+LIMIT 10;
