@@ -1,11 +1,13 @@
 # Data Analyst Skills That Pay: A Demand vs. Salary Analysis of 2023 Job Postings
 ## Introduction
-<p style="text-align: justify;">
-Everyone wants a high-paying job in data, but few can pinpoint exactly which skills the market is willing to pay a premium for. Is it Python? SQL? Or a niche combination of both? This analysis moves beyond job titles to look at the "market price" of expertise. Using a SQL-driven framework, we analyzed salary variances across locations and industries to solve a critical problem for the modern professional: How do you strategically choose what to learn next? The results offer a transparent look at the ROI of technical skills, revealing which paths lead to stagnation and which lead to the highest financial returns.
+Everyone wants a high-paying job in data, but few can pinpoint exactly which skills the market is willing to pay a premium for. Is it **Python? SQL?** Or a niche combination of both? This analysis moves beyond job titles to look at the "market price" of expertise. Using a SQL-driven framework, we analyzed salary variances across locations and industries to solve a critical problem for the modern professional: How do you strategically choose what to learn next? The results offer a transparent look at the ROI of technical skills, revealing which paths lead to stagnation and which lead to the highest financial returns.
 </p>
+Wanna Check out the Queries? Access it here: 
 
 ## Objectives
+<p style="text-align: justify;">
 The objective of this project is to move beyond anecdotal career advice and establish a data-driven framework for navigating the 2023 data analyst job market. By applying statistical aggregation and filtering to real-world job postings and compensation data, this project aims to provide a clear roadmap for career progression and skill acquisition. More importantly, it seeks to answer the following questions:
+
 #### 1. Which data roles offer the highest-paying job opportunities?
 This identifies where the strongest compensation exists across data-related roles at both global and local levels.
 #### 2. How does Data Analyst compensation differ between global and local markets?
@@ -18,17 +20,22 @@ This evaluates salary premiums to determine which technical skills provide stron
 By combining market demand and average salary, this question identifies high-value skills that offer the best return on investment, distinguishing strategic, specialized, commodity, and low-priority skills.
 
 ## Methodology 
+<p style="text-align: justify;">
 This project uses SQL as the primary tool to analyze a large dataset of job postings from 2023 and convert it into clear insights about the data analyst job market. The dataset includes information on job titles, companies, locations, salary data, and required skills.
 The analysis was conducted by building structured SQL queries that progressively narrow the data to match the goals of the project. Job postings were first filtered by role and location to allow fair comparisons between global and local markets. Salary data was then aggregated to measure average, minimum, and maximum compensation, providing a clear view of earning potential and career progression.
+<p style="text-align: justify;">
 To understand skill requirements, job postings were linked to their associated skills using relational joins. This made it possible to measure how often specific skills appear in data analyst roles (market demand) and how those skills relate to average salary outcomes (skill value). By combining these two measures, the project evaluates not just which skills are popular, but which ones are most strongly rewarded by the market.
+
 ## Tools 
 <p style="text-align: justify;">
+
 The primary aim of this project is to create a data-driven framework that connects roles, skills, and salary into a single, coherent view of the data analyst labor market. To do so, we also used the following tools: 
-SQL: Served as the primary analytical language. Used extensively for data filtering, aggregation, joins, window functions, CTEs, and derived metrics to uncover salary trends, skill demand, and valuation patterns.
-PostgreSQL: Used as the relational database management system to store and manage large-scale job posting data, used for efficient querying, indexing, and schema-based data modeling.
-Visual Studio Code: Used as the primary working environment for developing, testing, and organizing SQL queries in a clear and maintainable environment.
-Microsoft Excel : Used extensively for data visualization and creation of performance dashboards.
-Git & GitHub: Used for version control and documentation to track query iterations. Used as a platform to share output and as an avenue for future collaborations.
+
+- SQL: Served as the primary analytical language. Used extensively for data filtering, aggregation, joins, window functions, CTEs, and derived metrics to uncover salary trends, skill demand, and valuation patterns.
+- PostgreSQL: Used as the relational database management system to store and manage large-scale job posting data, used for efficient querying, indexing, and schema-based data modeling.
+- Visual Studio Code: Used as the primary working environment for developing, testing, and organizing SQL queries in a clear and maintainable environment.
+- Microsoft Excel : Used extensively for data visualization and creation of performance dashboards.
+- Git & GitHub: Used for version control and documentation to track query iterations. Used as a platform to share output and as an avenue for future collaborations.
 </p>
 
 ## Analysis
@@ -59,7 +66,7 @@ LIMIT 10
 - Contract-based analyst roles show a significant pay trade-off compared to full-time positions.
 - Roles combining analytics with engineering or research depth consistently command higher salaries.
 <p style="text-align: justify;">
-Local market results show a clear salary gap between advanced data roles and traditional analyst positions. Data Scientist ($164,000) and Analytics Engineer ($139,216) roles command the highest average salaries, reflecting strong demand for modeling, engineering, and system-level skills. Among analyst roles, Data Analyst ($111,175) and mid-level Data Analyst ($98,500) positions remain competitive, while contract-based roles average significantly lower pay ($69,900), indicating a trade-off between stability and compensation. Research-focused roles fall in the mid-to-high range, suggesting domain expertise adds value, but the highest salary outcomes consistently align with roles that combine analytics with engineering or specialized technical responsibility.
+Local market results show a clear salary gap between advanced data roles and traditional analyst positions. Data Scientist ($164,000) and Analytics Engineer ($139,216) roles command the highest average salaries, which shows a strong demand for modeling, engineering, and system-level skills. Among analyst roles, Data Analyst ($111,175) and mid-level Data Analyst ($98,500) positions remain competitive, while contract-based roles average significantly lower pay ($69,900), indicating a trade-off between stability and compensation. Research-focused roles fall in the mid-to-high range, suggesting domain expertise adds value, but the highest salary outcomes consistently align with roles that combine analytics with engineering or specialized technical responsibility.
 </p>
 
 ![Alt text](1_global.png)
@@ -284,7 +291,7 @@ ORDER BY
 <p style="text-align: justify;">
 Using the unified evaluation model, it shows that the highest salary outcomes are consistently driven by specialized skills with low market penetration in both local and global markets.
 <p style="text-align: justify;">
-Locally, technologies such as MongoDB, Node.js, Cassandra, and Solidity command average salaries exceeding $150,000 despite relatively limited demand, indicating strong compensation premiums for niche expertise. A similar pattern appears globally, where skills like Debian, Lua, Haskell, and ASP.NET Core achieve comparable salary levels while remaining scarce. Notably, several skills, including MongoDB, dplyr, Node.js, Cassandra, and Solidity, appear in both markets, suggesting globally transferable specialization.
+Locally, technologies such as MongoDB, Node.js, Cassandra, and Solidity command average salaries exceeding $150,000 despite relatively limited demand, which indicates strong compensation premiums for niche expertise. A similar pattern appears globally, where skills like Debian, Lua, Haskell, and ASP.NET Core achieve comparable salary levels while remaining scarce. Notably, several skills, including MongoDB, dplyr, Node.js, Cassandra, and Solidity, appear in both markets, suggesting globally transferable specialization.
 <p style="text-align: justify;">
   Overall, these results confirm that skills positioned in the Specialized category deliver the highest return on investment, reinforcing that salary growth is more strongly influenced by technical scarcity and complexity than by widespread adoption.
 </p>
@@ -297,10 +304,11 @@ This project also strengthened my analytical forecasting abilities by training m
 </p>
 
 ## Conclusion
-<p style="text-align: justify;">
-The highest-paying data roles go beyond traditional analyst positions, with Data Scientist, Analytics Engineer, and senior or leadership roles consistently topping compensation tables. Locally, mid-level analyst roles are competitive, but the largest salary gains come from combining analytics with engineering, research, or decision-making responsibilities. Globally, senior and executive roles offer dramatically higher ceilings due to market scale and organizational impact.
-<p style="text-align: justify;">
-Foundational skills like SQL, Excel, Python, and BI tools remain essential for employability, but high salaries are driven by specialized, niche skills with scarcity and technical complexity. The global market especially rewards expertise in advanced or infrastructure-focused tools.
-<p style="text-align: justify;">
-To maximize both employability and salary leverage, analysts should build a strong analytical foundation and layer on specialized, high-value skills. This combination consistently delivers the best return on investment and positions professionals for high-impact, high-compensation roles.
+The highest-paying data roles are no longer limited to traditional analyst positions. Roles such as **Data Scientist, Analytics Engineer, and senior or leadership positions** consistently offer the strongest compensation. In the local market, mid-level analyst roles remain competitive, but the most significant salary increases come from blending **analytics with engineering, research, or decision-making responsibilities rather than analytics alone**.
+
+In the global market, compensation scales much higher, especially for senior, principal, and executive-level roles, where pay reflects broader organizational impact and larger market scope. Overall, the global data market provides **higher average salaries and a wider earning range**, while the local market rewards professionals who expand beyond core analytics into more specialized or strategic functions.
+
+Foundational skills like **SQL, Excel, Python, and BI tools** remain essential for employability, but high salaries are driven by specialized, niche skills with scarcity and technical complexity. The global market especially rewards expertise in advanced or infrastructure-focused tools.
+
+To maximize both employability and salary leverage, analysts should **build a strong analytical foundation and layer on specialized, high-value skills**. This combination consistently delivers the best return on investment and positions professionals for high-impact and high-compensation roles.
 </p>
