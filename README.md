@@ -1,6 +1,10 @@
 # Data Analyst Skills That Pay: A Demand vs. Salary Analysis of 2023 Job Postings
 ## Introduction
-Everyone wants a high-paying job in data, but few can pinpoint exactly which skills the market is willing to pay a premium for. Is it **Python? SQL?** Or a niche combination of both? This analysis moves beyond job titles to look at the "market price" of expertise. Using a SQL-driven framework, we analyzed salary variances across locations and industries to solve a critical problem for the modern professional: How do you strategically choose what to learn next? The results offer a transparent look at the ROI of technical skills, revealing which paths lead to stagnation and which lead to the highest financial returns.
+Everyone wants a high-paying job in data, but few can pinpoint exactly which skills the market is willing to pay a premium for. Is it **Python? SQL?** Or a niche combination of both? This analysis moves beyond job titles to look at the "market price" of expertise. Using a SQL-driven framework, we analyzed salary variances across locations and industries to solve a critical problem for the modern professional: 
+
+**How do you strategically choose what to learn next?**
+
+ The results offer a transparent look at the ROI of technical skills, revealing which paths lead to stagnation and which lead to the highest financial returns.
 
 
 Wanna Check out the Queries 🤔? Access it here 😃:
@@ -41,7 +45,7 @@ The primary aim of this project is to create a data-driven framework that connec
 
 ## Analysis
 ### 1. Highest-Paying Data Roles
-We identified the top 10 highest-paying data roles at both global and local levels. We  then filter the results specifically for data analyst positions wherein location and average annual salary are the important key factors for being in the list. 
+We identified the top 10 highest-paying data roles at both global and local levels. We  then filter the results specifically for data analyst positions wherein **location and average annual salary** are the important key factors for being in the list. 
 ```
 SELECT
     job_id,
@@ -61,20 +65,21 @@ LIMIT 10
 ```
 ![Alt text](1_local.png)
 
+#### Local Average Annual Salary of Top Paying Data Roles
+
 #### Key Insights
 - Advanced roles such as Data Scientist and Analytics Engineer dominate the local salary landscape.
 - Data analyst compensation increases noticeably with seniority and role scope.
-- Contract-based analyst roles show a significant pay trade-off compared to full-time positions.
 - Roles combining analytics with engineering or research depth consistently command higher salaries.
 <p style="text-align: justify;">
 Local market results show a clear salary gap between advanced data roles and traditional analyst positions. Data Scientist ($164,000) and Analytics Engineer ($139,216) roles command the highest average salaries, which shows a strong demand for modeling, engineering, and system-level skills. Among analyst roles, Data Analyst ($111,175) and mid-level Data Analyst ($98,500) positions remain competitive, while contract-based roles average significantly lower pay ($69,900), indicating a trade-off between stability and compensation. Research-focused roles fall in the mid-to-high range, suggesting domain expertise adds value, but the highest salary outcomes consistently align with roles that combine analytics with engineering or specialized technical responsibility.
 </p>
 
 ![Alt text](1_global.png)
-
+#### Global Average Annual Salary of Top Paying Data Roles
 - Global compensation for advanced data roles is an order of magnitude higher than local benchmarks.
 - Senior and staff-level Data Scientist roles dominate the top salary tier.
-- Executive and research-intensive roles command sustained salary premiums.
+- Executive and research-intensive roles earns the highest pay
 - The global market strongly rewards scale, specialization, and leadership.
 <p style="text-align: justify;">
 Global market results show extreme salary concentration at the senior and executive levels, led by Data Scientist ($960,000) and Senior Data Scientist ($890,000) roles, far exceeding local compensation ceilings. Unlike the local market, where analytics and engineering roles are more evenly distributed, global top-paying positions are heavily skewed toward senior, staff, and leadership roles, including VP Data Science & Research ($463,500) and staff-level research positions. Even general Data Analyst roles reach significantly higher compensation globally ($650,000), highlighting the impact of market scale, company size, and regional pay structures. Overall, the global market places substantially greater monetary value on advanced specialization, organizational influence, and high-impact decision-making compared to the more role-balanced local landscape.
