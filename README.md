@@ -261,7 +261,7 @@ ORDER BY
 - Salaries are driven more by scarcity than popularity.
 - Local and global markets show strong overlap in specialized skill valuation.
 - High demand alone does not guarantee high return on investment.
-### Top Local Skills to Prioritize
+### Top Local Priority Skills 
 | Skill        | Demand Count | Average Yearly Salary (USD) | Skill Category |
 |--------------|--------------|-----------------------------|----------------|
 | MongoDB      | 262          | 170,715                     | Specialized    |
@@ -275,7 +275,7 @@ ORDER BY
 | Hugging Face | 37           | 148,648                     | Specialized    |
 | Neo4j        | 124          | 147,708                     | Specialized    |
 
-### Top Global Skills to Prioritize
+### Top Global Priority Skills 
 | Skill         | Demand Count | Average Yearly Salary (USD) | Skill Category |
 |---------------|--------------|-----------------------------|----------------|
 | Debian        | 9            | 196,500                     | Specialized    |
