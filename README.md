@@ -288,7 +288,7 @@ ORDER BY
 | Node.js       | 187          | 154,408                     | Specialized    |
 | Cassandra     | 840          | 154,124                     | Specialized    |
 | Solidity      | 59           | 153,640                     | Specialized    |
-##### Access the full tables here: [Global](Results\5_holistic_global.csv) and [Local](Results\5_holistic_local.csv)
+##### Access the full tables here: [Global](https://github.com/rpmesina/SQL_Job_Market_Analysis/blob/main/Results/5_holistic_global.csv) and [Local](https://github.com/rpmesina/SQL_Job_Market_Analysis/blob/main/Results/5_holistic_local.csv)
 
 <p style="text-align: justify;">
 Using the unified evaluation model, it shows that the highest salary outcomes are consistently driven by specialized skills with low market penetration in both local and global markets.
