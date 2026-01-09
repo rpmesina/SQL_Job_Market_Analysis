@@ -66,7 +66,6 @@ LIMIT 10
 #### Local Average Annual Salary of Top Paying Data Roles
 ![Alt text](1_local.png)
 
-#### Key Insights
 - Advanced roles such as Data Scientist and Analytics Engineer dominate the local salary landscape.
 - Data analyst compensation increases noticeably with seniority and role scope.
 - Roles combining analytics with engineering or research depth consistently command higher salaries.
@@ -130,7 +129,6 @@ ORDER BY demand_count DESC
 LIMIT 5;
 ```
 
-#### Key Insights
 - SQL and Excel form the foundational skill set across both global and local markets.
 - The global market shows stronger demand for programming and visualization tools.
 - The local market places relatively higher emphasis on spreadsheet and BI tools.
@@ -166,7 +164,6 @@ GROUP BY skills
 ORDER BY avg_salary DESC
 LIMIT 10; 
 ```
-#### Key Insights
 - Globally, specialized and infrastructure-oriented skills command the highest salary compensation.
 - High-paying global skills are often low-frequency but high-impact.
 - Locally, salaries dominantly favor analytics platforms and core data tools.
@@ -260,8 +257,6 @@ ORDER BY
         skill_stats.avg_salary DESC,
      skill_stats.demand_count DESC;
 ```
-
-#### Key Insights
 - High-paying skills in both markets are dominated by specialized, low-demand technologies.
 - Salaries are driven more by scarcity than popularity.
 - Local and global markets show strong overlap in specialized skill valuation.
@@ -305,7 +300,7 @@ Outside the Specialized category, skill outcomes are mainly influenced by how co
  Commodity skills are heavily demanded but offer weaker salary leverage because they are expected baseline tools, including **Excel, Power BI, Tableau, and SQL Server**, which are essential for daily analytics work but rarely drive pay differentiation. Low Priority skills show limited demand and lower salary impact, often associated with niche utilities, legacy systems, or general-purpose tools that add minimal standalone value. Overall, these categories highlight that while popular tools support employability, only a subset consistently contributes to stronger compensation outcomes. Moreover, it reinforces the idea that salary growth is more strongly influenced by technical scarcity and complexity rathen than popularity .
 </p>
 
-## What I Learned
+## Key Takeaways
 <p style="text-align: justify;">
 Through this project, I learned how to build a complete SQL-based data analysis workflow from scratch, starting with creating a local PostgreSQL database, designing structured tables, and importing raw job market data. Using Visual Studio Code, I developed and refined SQL queries for data cleaning, aggregation, multi-table joins, and salary analysis, while applying CTEs and window functions to extract meaningful insights. I also gained hands-on experience troubleshooting data import issues, schema conflicts, and query errors, strengthening my problem-solving and debugging skills. I also learned to showcase my professional project through GitHub and control its version through Git. I also enhanced my data visualization skills using Microsoft Excel. 
 <p style="text-align: justify;">
@@ -313,11 +308,9 @@ This project also strengthened my analytical forecasting abilities by training m
 </p>
 
 ## Conclusion
-The highest-paying data roles are no longer limited to traditional analyst positions. Roles such as **Data Scientist, Analytics Engineer, and senior or leadership positions** consistently offer the strongest compensation. In the local market, mid-level analyst roles remain competitive, but the most significant salary increases come from blending **analytics with engineering, research, or decision-making responsibilities rather than analytics alone**.
+This project confirms that the highest-paying opportunities in the data job market concentrate in advanced and senior roles, particularly **Data Scientist and analytics roles that integrate engineering or research responsibilities**. While Data Analyst positions offer competitive compensation, the strongest salary outcomes consistently align with expanded technical responsibilities, higher-impact decision-making, and seniority, especially in global markets.
 
-In the global market, compensation scales much higher, especially for senior, principal, and executive-level roles, where pay reflects broader organizational impact and larger market scope. Overall, the global data market provides **higher average salaries and a wider earning range**, while the local market rewards professionals who expand beyond core analytics into more specialized or strategic functions.
+A clear compensation gap emerges between global and local Data Analyst roles. Global positions show significantly higher average and maximum salaries, reflecting broader market scale and stronger rewards for senior progression. **Local roles**, while comparable at entry levels, demonstrate tighter salary ranges and earlier ceilings, which **limits long-term earning potential** without role expansion or specialization.
 
-Foundational skills like **SQL, Excel, Python, and BI tools** remain essential for employability, but high salaries are driven by specialized, niche skills with scarcity and technical complexity. The global market especially rewards expertise in advanced or infrastructure-focused tools.
-
-To maximize both employability and salary leverage, analysts should **build a strong analytical foundation and layer on specialized, high-value skills**. This combination consistently delivers the best return on investment and positions professionals for high-impact and high-compensation roles.
+From a skills perspective, employers consistently expect foundational analytics tools such as **SQL, Excel, Python, and business intelligence platforms** as essential tools for employability. However, higher salary leverage comes from specialized and less common technologies, where scarcity increases market value. These results indicate that Data Analysts professionals can maximize their career and compensations by establishing strong core skills. While in the long run, **there is a need for selectively upskilling in unique but high-impact skills** that extend beyond common reporting platforms to achieve high salary roles.
 </p>
