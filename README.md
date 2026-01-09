@@ -4,7 +4,7 @@ Everyone wants a high-paying job in data, but few can pinpoint exactly which ski
 
 
 Wanna Check out the Queries 🤔? Access it here 😃:
-[Queries_used](SQL_JOB_MARKET_PROJECT\Queries)
+[Queries_used](Queries)
 
 ## Objectives
 <p style="text-align: justify;">
@@ -288,7 +288,8 @@ ORDER BY
 | Node.js       | 187          | 154,408                     | Specialized    |
 | Cassandra     | 840          | 154,124                     | Specialized    |
 | Solidity      | 59           | 153,640                     | Specialized    |
-##### Access the full tables here: [Global](SQL_JOB_MARKET_PROJECT\Results\5_holistic_global.csv) , [Local](SQL_JOB_MARKET_PROJECT\Results\5_holistic_local.csv)
+##### Access the full tables here: [Global](Results\5_holistic_global.csv) , [Local](Results\5_holistic_local.csv)
+
 <p style="text-align: justify;">
 Using the unified evaluation model, it shows that the highest salary outcomes are consistently driven by specialized skills with low market penetration in both local and global markets.
 <p style="text-align: justify;">
