@@ -22,7 +22,7 @@ This evaluates salary premiums to determine which technical skills provide stron
 By combining market demand and average salary, this question identifies high-value skills that offer the best return on investment, distinguishing strategic, specialized, commodity, and low-priority skills.
 
 ## Methodology 
-This project uses SQL as the primary tool to analyze a large dataset of job postings from 2023 and convert it into clear insights about the data analyst job market. The [dataset](https://sqliteviz.com/app/#/workspace?hide_schema=1) contains information on 2023's job titles, companies, locations, salary data, and required skills. 
+This project uses SQL as the primary tool to analyze a large dataset of job postings from 2023 and convert it into clear insights about the data analyst job market. The [dataset](https://drive.google.com/drive/folders/1KD5tZ1xcfKAIwO6uBV4Jz0n6d4NrmVoT?usp=sharing) contains information on 2023's job titles, companies, locations, salary data, and required skills. 
 The analysis was conducted by building structured SQL queries that progressively narrow the data to match the goals of the project. Job postings were first filtered by role and location to allow fair comparisons between global and local markets. Salary data was then aggregated to measure average, minimum, and maximum compensation, providing a clear view of earning potential and career progression.
 <p style="text-align: justify;">
 To understand skill requirements, job postings were linked to their associated skills using relational joins. This made it possible to measure how often specific skills appear in data analyst roles (market demand) and how those skills relate to average salary outcomes (skill value). By combining these two measures, the project evaluates not just which skills are popular, but which ones are most strongly rewarded by the market.
@@ -288,7 +288,7 @@ ORDER BY
 | Node.js       | 187          | 154,408                     | Specialized    |
 | Cassandra     | 840          | 154,124                     | Specialized    |
 | Solidity      | 59           | 153,640                     | Specialized    |
-##### Access the full tables here: [Global](Results\5_holistic_global.csv) , [Local](Results\5_holistic_local.csv)
+##### Access the full tables here: [Global](Results\5_holistic_global.csv) and [Local](Results\5_holistic_local.csv)
 
 <p style="text-align: justify;">
 Using the unified evaluation model, it shows that the highest salary outcomes are consistently driven by specialized skills with low market penetration in both local and global markets.
