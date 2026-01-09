@@ -63,9 +63,8 @@ ORDER BY
     salary_year_avg DESC
 LIMIT 10
 ```
-![Alt text](1_local.png)
-
 #### Local Average Annual Salary of Top Paying Data Roles
+![Alt text](1_local.png)
 
 #### Key Insights
 - Advanced roles such as Data Scientist and Analytics Engineer dominate the local salary landscape.
@@ -75,8 +74,9 @@ LIMIT 10
 Local market results show a clear salary gap between advanced data roles and traditional analyst positions. Data Scientist ($164,000) and Analytics Engineer ($139,216) roles command the highest average salaries, which shows a strong demand for modeling, engineering, and system-level skills. Among analyst roles, Data Analyst ($111,175) and mid-level Data Analyst ($98,500) positions remain competitive, while contract-based roles average significantly lower pay ($69,900), indicating a trade-off between stability and compensation. Research-focused roles fall in the mid-to-high range, suggesting domain expertise adds value, but the highest salary outcomes consistently align with roles that combine analytics with engineering or specialized technical responsibility.
 </p>
 
-![Alt text](1_global.png)
 #### Global Average Annual Salary of Top Paying Data Roles
+![Alt text](1_global.png)
+
 - Global compensation for advanced data roles is an order of magnitude higher than local benchmarks.
 - Senior and staff-level Data Scientist roles dominate the top salary tier.
 - Executive and research-intensive roles earns the highest pay
