@@ -1,8 +1,10 @@
 # Data Analyst Skills That Pay: A Demand vs. Salary Analysis of 2023 Job Postings
 ## Introduction
 Everyone wants a high-paying job in data, but few can pinpoint exactly which skills the market is willing to pay a premium for. Is it **Python? SQL?** Or a niche combination of both? This analysis moves beyond job titles to look at the "market price" of expertise. Using a SQL-driven framework, we analyzed salary variances across locations and industries to solve a critical problem for the modern professional: How do you strategically choose what to learn next? The results offer a transparent look at the ROI of technical skills, revealing which paths lead to stagnation and which lead to the highest financial returns.
-</p>
-Wanna Check out the Queries? Access it here: 
+
+
+Wanna Check out the Queries 🤔? Access it here 😃:
+[Queries_used](SQL_JOB_MARKET_PROJECT\Queries)
 
 ## Objectives
 <p style="text-align: justify;">
@@ -20,8 +22,7 @@ This evaluates salary premiums to determine which technical skills provide stron
 By combining market demand and average salary, this question identifies high-value skills that offer the best return on investment, distinguishing strategic, specialized, commodity, and low-priority skills.
 
 ## Methodology 
-<p style="text-align: justify;">
-This project uses SQL as the primary tool to analyze a large dataset of job postings from 2023 and convert it into clear insights about the data analyst job market. The dataset includes information on job titles, companies, locations, salary data, and required skills.
+This project uses SQL as the primary tool to analyze a large dataset of job postings from 2023 and convert it into clear insights about the data analyst job market. The [dataset](https://sqliteviz.com/app/#/workspace?hide_schema=1) contains information on 2023's job titles, companies, locations, salary data, and required skills. 
 The analysis was conducted by building structured SQL queries that progressively narrow the data to match the goals of the project. Job postings were first filtered by role and location to allow fair comparisons between global and local markets. Salary data was then aggregated to measure average, minimum, and maximum compensation, providing a clear view of earning potential and career progression.
 <p style="text-align: justify;">
 To understand skill requirements, job postings were linked to their associated skills using relational joins. This made it possible to measure how often specific skills appear in data analyst roles (market demand) and how those skills relate to average salary outcomes (skill value). By combining these two measures, the project evaluates not just which skills are popular, but which ones are most strongly rewarded by the market.
@@ -184,8 +185,8 @@ To identify the skills that offer the best balance between job market demand and
 <p style="text-align: justify;">
 First, job postings were filtered to Data Analyst roles and linked to their associated skills and salary data. For each skill, two metrics were calculated:
 
-1. **demand_count**, representing how frequently the skill appears across job postings, and
-2. **average yearly salary**, representing the typical compensation associated with roles requiring that skill.
+1. ```demand_count```, representing how frequently the skill appears across job postings, and
+2. ```average_yearly_salary```, representing the typical compensation associated with roles requiring that skill.
 <p style="text-align: justify;">
 Next, instead of using fixed or subjective cutoffs, we established dynamic thresholds based on the dataset itself. The average demand and average salary across all skills were computed and used as reference points. Each skill was then evaluated relative to these benchmarks, allowing performance to be assessed in a market-aware and unbiased way.
 <p style="text-align: justify;">
@@ -195,9 +196,9 @@ Based on whether a skill falls above or below the average demand and salary thre
 
 - **Specialized (Low demand but High pay):** Skills with below-average demand but above-average salaries, reflecting niche expertise that commands premium compensation due to scarcity.
 
-- **Commodity (High demand but lower pay):** Widely required skills that exceed average demand but do not deliver above-average salary returns, suggesting strong employability but limited differentiation.
+- **Commodity (High demand but Lower pay):** Widely required skills that exceed average demand but do not deliver above-average salary returns, suggesting strong employability but limited differentiation.
 
-- **Low Priority (Low demand and low pay):** Skills that fall below market averages on both metrics, offering limited demand and compensation benefits.
+- **Low Priority (Low demand and Low pay):** Skills that fall below market averages on both metrics, offering limited demand and compensation benefits.
 <p style="text-align: justify;">
 To ensure statistical relevance, only skills appearing in more than five job postings were included. This approach avoids overemphasizing rare outliers while preserving meaningful market signals. By anchoring skill classification to dataset-wide averages, the framework objectively highlights which technical skills deliver the highest return on investment in terms of both employability and salary outcomes.
 </p>
@@ -260,7 +261,7 @@ ORDER BY
 - Salaries are driven more by scarcity than popularity.
 - Local and global markets show strong overlap in specialized skill valuation.
 - High demand alone does not guarantee high return on investment.
-### Top Local Skills with High ROI (Prioritize!)
+### Top Local Skills to Prioritize
 | Skill        | Demand Count | Average Yearly Salary (USD) | Skill Category |
 |--------------|--------------|-----------------------------|----------------|
 | MongoDB      | 262          | 170,715                     | Specialized    |
@@ -274,7 +275,7 @@ ORDER BY
 | Hugging Face | 37           | 148,648                     | Specialized    |
 | Neo4j        | 124          | 147,708                     | Specialized    |
 
-### Top Global Skills with High ROI (Prioritize!)
+### Top Global Skills to Prioritize
 | Skill         | Demand Count | Average Yearly Salary (USD) | Skill Category |
 |---------------|--------------|-----------------------------|----------------|
 | Debian        | 9            | 196,500                     | Specialized    |
@@ -287,13 +288,15 @@ ORDER BY
 | Node.js       | 187          | 154,408                     | Specialized    |
 | Cassandra     | 840          | 154,124                     | Specialized    |
 | Solidity      | 59           | 153,640                     | Specialized    |
-
+##### Access the full tables here: [Global](SQL_JOB_MARKET_PROJECT\Results\5_holistic_global.csv) , [Local](SQL_JOB_MARKET_PROJECT\Results\5_holistic_local.csv)
 <p style="text-align: justify;">
 Using the unified evaluation model, it shows that the highest salary outcomes are consistently driven by specialized skills with low market penetration in both local and global markets.
 <p style="text-align: justify;">
-Locally, technologies such as MongoDB, Node.js, Cassandra, and Solidity command average salaries exceeding $150,000 despite relatively limited demand, which indicates strong compensation premiums for niche expertise. A similar pattern appears globally, where skills like Debian, Lua, Haskell, and ASP.NET Core achieve comparable salary levels while remaining scarce. Notably, several skills, including MongoDB, dplyr, Node.js, Cassandra, and Solidity, appear in both markets, suggesting globally transferable specialization.
-<p style="text-align: justify;">
-  Overall, these results confirm that skills positioned in the Specialized category deliver the highest return on investment, reinforcing that salary growth is more strongly influenced by technical scarcity and complexity than by widespread adoption.
+Locally, technologies such as MongoDB, Node.js, Cassandra, and Solidity command average salaries exceeding $150,000 despite relatively limited demand, which indicates strong compensation premiums for niche expertise. A similar pattern appears globally, where skills like Debian, Lua, Haskell, and ASP.NET Core achieve comparable salary levels while remaining scarce. Notably, several skills, including MongoDB, dplyr, Node.js, Cassandra, and Solidity, appear in both markets, suggesting globally transferable specialization. 
+
+Outside the Specialized category, skill outcomes are mainly influenced by how common and standardized a tool has become in the job market. Strategic skills sits second as the strongest position, with widely used technologies such as **Python, SQL, cloud platforms (AWS)**, and big data tools like Spark appearing across many roles while still maintaining strong salary outcomes.
+
+ Commodity skills are heavily demanded but offer weaker salary leverage because they are expected baseline tools, including **Excel, Power BI, Tableau, and SQL Server**, which are essential for daily analytics work but rarely drive pay differentiation. Low Priority skills show limited demand and lower salary impact, often associated with niche utilities, legacy systems, or general-purpose tools that add minimal standalone value. Overall, these categories highlight that while popular tools support employability, only a subset consistently contributes to stronger compensation outcomes. Moreover, it reinforces the idea that salary growth is more strongly influenced by technical scarcity and complexity rathen than popularity .
 </p>
 
 ## What I Learned
